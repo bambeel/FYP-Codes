@@ -1,4 +1,6 @@
 /*
+devlog:
+[271223] updated i2c address
 Pinouts:
 Vcc = 5V Arduino
 Gnd = GND Arduino
@@ -13,6 +15,8 @@ To use a slightly lower 32V, 1A range (higher precision on amps):
 ina219.setCalibration_32V_1A();
 Or to use a lower 16V, 400mA range, call:
 ina219.setCalibration_16V_400mA();
+
+I2C scanned address = 0x40
 */
 
 #include <Wire.h>
