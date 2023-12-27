@@ -1,3 +1,7 @@
+/* devlog
+updated non-functional (typo in line 15)
+*/
+
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
