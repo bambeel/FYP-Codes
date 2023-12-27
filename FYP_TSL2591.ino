@@ -1,6 +1,6 @@
 /*
 devlog:
-updated the i2c address
+[271223] updated the i2c address
 install adafruit tsl2591 library
 
 Pinout:
