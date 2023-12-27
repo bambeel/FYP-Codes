@@ -1,5 +1,7 @@
 /*
-install adafruit tsl2591 library\
+devlog:
+updated the i2c address
+install adafruit tsl2591 library
 
 Pinout:
 Vin: 5V pin
@@ -7,6 +9,8 @@ GND: Ground Arduino
 INT: Interrupt Pin
 SDA: Serial Data Pin 
 SCL: Serial Clock Pin
+
+I2C Scanned Address = 0x29
 */
 
 #include <Adafruit_TSL2591.h>
