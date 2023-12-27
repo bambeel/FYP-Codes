@@ -1,5 +1,8 @@
 /* devlog
-updated non-functional (typo in line 15)
+[271223] updated non-functional (typo in line 15)
+[271223] updated i2c address
+
+I2C Scanned Address = 0x76
 */
 
 #include <Wire.h>
