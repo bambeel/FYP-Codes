@@ -3,8 +3,11 @@
 #include <Adafruit_TSL2591.h>
 #include <Adafruit_BME280.h>
 #include <Adafruit_INA219.h>
+#include <LiquidCrystal_I2C.h>
 
 #define SEALEVELPRESSURE_HPA (1013.25)
+
+LiquidCrystal_I2C lcd(0x27, 20, 4);
 
 Adafruit_TSL2591 tsl2591 = Adafruit_TSL2591(2591);
 Adafruit_BME280 bme280;
@@ -17,15 +20,27 @@ float loadvoltage = 0.0;
 float power = 0.0;
 
 void setup() {
+  lcd.init();
+  lcd.backlight();
   Serial.begin(9600);
   if (!tsl2591.begin()) {
     Serial.println("TSL2591 Unavailable");
+    lcd.setCursor(0,0);
+    lcd.print("TSL2591 Unavailable");
   }
   if (!bme280.begin(0x76)) {
     Serial.println("BME280 Unavailable");
+    lcd.setCursor(0,1);
+    lcd.print("BME280 Unavailable");
   }
   if (!ina219.begin()) {
     Serial.println("INA219 Unavailable");
+    lcd.setCursor(0,2);
+    lcd.print("INA219 Unavailable");
+  }
+  else if (tsl2591.begin() && bme280.begin() && ina219.begin()){
+    lcd.setCursor(0, 0);
+    lcd.print("system initialized");
   }
 
   tsl2591.setGain(TSL2591_GAIN_MED);
