@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --color-bg: #232323;
+    --color-blocks: #595959;
+    --color-primarytext: #ffffff;
+    --color-secondarytext: #cbcbcb;
+    --box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.2);
+    --box-shadow-2: 0px 0px 10px 5px rgba(0, 0, 0, 0.2); 
+}
+
+body{
+    background-color: var(--color-bg);
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background: var(--color-blocks);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+
+.sidebar header{
+    justify-content: center;
+}
+
+.sidebar header img{
+    margin-left: 10px;
+    width: 80%;
+    margin-top: 5px;
+}
+
+.sidebar ul{
+    display: inline-block;
+    padding-top: 120px;
+    width: 100%;
+    
+}
+
+.sidebar ul li{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-top: 1px solid var(--color-primarytext);
+    border-bottom: 1px solid var(--color-primarytext);
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height:70px;
+    color: var(--color-primarytext);
+    transition: 0.5s;
+}
+
+ul li:hover a{
+    padding-left: 10px;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    } 
+    to {
+        transform: translateX(-300%);
+    }
+}
+
+.info {
+    overflow-x: auto;
+    max-height: 1000px;
+    width: 92%;
+    float: left;
+    margin-top: 50px;
+    margin-left: 120px;
+    display: flex;
+    white-space: nowrap;
+}
+
+.info .item{
+    display: inline-block;
+    min-width: 250px;
+    height: 350px;
+    background-color: var(--color-blocks);
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.info .item .panellabel{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.8;
+    color: var(--color-primarytext);
+}
+
+.info .item .commstat{
+    float: top;
+    top: 200px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.8;
+    color: var(--color-primarytext);
+}
+
+.voltage-viewer {
+    position: absolute;
+    width: 565px;
+    height: 300px;
+    left: 120px;
+    top: 440px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: var(--color-blocks);
+    box-shadow: var(--box-shadow);
+}
+
+.voltage-viewer .volt{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.8;
+    color: var(--color-primarytext);
+}
+
+.irradiance-viewer {
+    position: absolute;
+    width: 565px;
+    height: 300px;
+    left: 120px;
+    top: 758.5px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: var(--color-blocks);
+    box-shadow: var(--box-shadow);
+}
+
+.irradiance-viewer .irradiance{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.8;
+    color: var(--color-primarytext);
+}
+
+
+.current-viewer {
+    position: absolute;
+    width: 565px;
+    height: 300px;
+    left: 702.5px;
+    top: 440px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: var(--color-blocks);
+    box-shadow: var(--box-shadow);
+}
+
+.current-viewer .current{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.8;
+    color: var(--color-primarytext);
+}
+
+.power-viewer {
+    position: absolute;
+    width: 565px;
+    height: 300px;
+    left: 702.5px;
+    top: 758.5px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: var(--color-blocks);
+    box-shadow: var(--box-shadow);
+}
+
+.power-viewer .power{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.8;
+    color: var(--color-primarytext);
+}
+
+.info-viewer {
+    position: absolute;
+    width: 600px;
+    height: 620px;
+    left: 1285px;
+    top: 440px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.8;
+    color: var(--color-primarytext);
+    border-radius: 25px 25px 25px 25px;
+    background-color: var(--color-blocks);
+    box-shadow: var(--box-shadow);
+}

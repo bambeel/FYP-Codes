@@ -1,0 +1,5 @@
+--color-bg: #232323;
+--color-blocks: #595959;
+--color-primarytext: #ffffff;
+--color-secondarytext: #cbcbcb;
+--box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.2);
