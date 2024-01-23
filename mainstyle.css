@@ -194,6 +194,14 @@ ul li:hover a{
     color: var(--color-primarytext);
 }
 
+.voltage-viewer .voltstat{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-secondarytext);
+    line-height: 0.8;
+}
+
 .irradiance-viewer {
     position: absolute;
     width: 565px;
@@ -211,6 +219,14 @@ ul li:hover a{
     font-size: 24px;
     line-height: 1.8;
     color: var(--color-primarytext);
+}
+
+.irradiance-viewer .irrstat{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-secondarytext);
+    line-height: 0.8;
 }
 
 
@@ -233,6 +249,14 @@ ul li:hover a{
     color: var(--color-primarytext);
 }
 
+.current-viewer .currstat{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-secondarytext);
+    line-height: 0.8;
+}
+
 .power-viewer {
     position: absolute;
     width: 565px;
@@ -250,6 +274,14 @@ ul li:hover a{
     font-size: 24px;
     line-height: 1.8;
     color: var(--color-primarytext);
+}
+
+.power-viewer .powerstat{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-secondarytext);
+    line-height: 0.8;
 }
 
 .info-viewer {
