@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&display=swap');
 
 :root{
-    --color-bg: #232323;
-    --color-blocks: #595959;
+    --color-bg: #150c25;
+    --color-blocks: #20113b;
     --color-primarytext: #ffffff;
     --color-secondarytext: #cbcbcb;
     --box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.2);
@@ -72,6 +72,7 @@ ul li:hover a{
     padding-left: 10px;
 }
 
+
 @keyframes slide {
     from{
         transform: translateX(0);
@@ -92,6 +93,20 @@ ul li:hover a{
     white-space: nowrap;
 }
 
+::-webkit-scrollbar{
+    height: 1em;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--color-blocks);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #3e236e;
+    border-radius: 10px;
+}
+
 .info .item{
     display: inline-block;
     min-width: 250px;
@@ -107,6 +122,47 @@ ul li:hover a{
     font-size: 24px;
     line-height: 1.8;
     color: var(--color-primarytext);
+}
+
+.info .item .circle{
+    width: 250px;
+    height: 260px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.info .item .voltcircle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 10px solid rgba(2, 255, 0, 1);
+}
+
+.info .item .ampscircle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 10px solid rgba(2, 255, 0, 1);
+}
+
+.info .item .irrcircle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 10px solid rgba(2, 255, 0, 1);
+}
+
+.info .item .tempcircle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 10px solid rgba(2, 255, 0, 1);
 }
 
 .info .item .commstat{
@@ -210,4 +266,68 @@ ul li:hover a{
     border-radius: 25px 25px 25px 25px;
     background-color: var(--color-blocks);
     box-shadow: var(--box-shadow);
+}
+
+.info-viewer .time{
+    font-size: 72px;
+    line-height: 1.2;
+}
+
+.info-viewer .date{
+    font-weight: 100;
+    color: var(--color-secondarytext);
+    line-height: 0.5;
+}
+
+.info-viewer .infocircle{
+    margin-top: 45px;
+    width: 600px;
+    height: 300px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.info-viewer .infocircle .circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 10px solid var(--color-secondarytext);
+}
+
+.info-viewer .infocircle .buttons{
+    size: 5em;
+    margin-top: 110px;
+    color: var(--color-secondarytext)
+}
+
+.info-viewer .infocircle .circle .daycount{
+    font-size: 120px;
+    line-height: 1.4;
+    color: var(--color-secondarytext)
+}
+
+.info-viewer .infocircle .circle .day{
+    font-size: 60px;
+    line-height: 0;
+    color: var(--color-secondarytext);
+}
+
+
+.info-viewer .site{
+    font-size: 36px;
+}
+
+.info-viewer .sitename{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.info-viewer .coordinates{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
 }
