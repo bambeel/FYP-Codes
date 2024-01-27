@@ -72,19 +72,8 @@ ul li:hover a{
     padding-left: 10px;
 }
 
-
-@keyframes slide {
-    from{
-        transform: translateX(0);
-    } 
-    to {
-        transform: translateX(-300%);
-    }
-}
-
-.info {
+.paneldb {
     overflow-x: auto;
-    max-height: 1000px;
     width: 92%;
     float: left;
     margin-top: 50px;
@@ -105,6 +94,18 @@ ul li:hover a{
 ::-webkit-scrollbar-thumb{
     background: #3e236e;
     border-radius: 10px;
+}
+
+/*start db.analytics here*/
+.info {
+    overflow-x: auto;
+    max-height: 1000px;
+    width: 92%;
+    float: left;
+    margin-top: 50px;
+    margin-left: 120px;
+    display: flex;
+    white-space: nowrap;
 }
 
 .info .item{
@@ -175,6 +176,67 @@ ul li:hover a{
     color: var(--color-primarytext);
 }
 
+.info .item .circle .voltcircle .classinfo{
+    font-size: 50px;
+    text-align: center;
+    color: var(--color-secondarytext);
+    font-weight: 700;
+}
+
+.info .item .circle .voltcircle .classname{
+    font-size: 25px;
+    text-align: center;
+    color: var(--color-secondarytext);
+    font-weight: 700;
+    line-height: 0.8;
+}
+
+.info .item .circle .irrcircle .classinfo{
+    font-size: 50px;
+    text-align: center;
+    color: var(--color-secondarytext);
+    font-weight: 700;
+}
+
+.info .item .circle .irrcircle .classname{
+    font-size: 25px;
+    text-align: center;
+    color: var(--color-secondarytext);
+    font-weight: 700;
+    line-height: 0.8;
+}
+
+.info .item .circle .ampscircle .classinfo{
+    font-size: 50px;
+    text-align: center;
+    color: var(--color-secondarytext);
+    font-weight: 700;
+}
+
+.info .item .circle .ampscircle .classname{
+    font-size: 25px;
+    text-align: center;
+    color: var(--color-secondarytext);
+    font-weight: 700;
+    line-height: 0.8;
+}
+
+.info .item .circle .tempcircle .classinfo{
+    font-size: 50px;
+    text-align: center;
+    color: var(--color-secondarytext);
+    font-weight: 700;
+}
+
+.info .item .circle .tempcircle .classname{
+    font-size: 25px;
+    text-align: center;
+    color: var(--color-secondarytext);
+    font-weight: 700;
+    line-height: 0.8;
+}
+
+
 .voltage-viewer {
     position: absolute;
     width: 565px;
@@ -228,7 +290,6 @@ ul li:hover a{
     color: var(--color-secondarytext);
     line-height: 0.8;
 }
-
 
 .current-viewer {
     position: absolute;
@@ -363,3 +424,55 @@ ul li:hover a{
     font-style: normal;
     font-weight: 500;
 }
+/*end db.analytics here*/
+
+
+/*start db.panel here*/
+.paneldb .panel{
+    display: inline-block;
+    min-width: 1050px;
+    height: 1000px;
+    background-color: var(--color-blocks);
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.paneldb .panel .panellist{
+    text-align: center;
+    color: var(--color-primarytext);
+    font-weight: 700;
+    font-size: 50px;
+    text-decoration: none;
+    line-height: 0.9;
+    padding-top: 10px;
+}
+
+.paneldb .panel .sitelist{
+    text-align: center;
+    color: var(--color-primarytext);
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    list-style: 0.9;
+}
+
+.paneldb .panel .place{
+    text-align: center;
+    color: var(--color-primarytext);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.paneldb .panel .coords{
+    text-align: center;
+    color: var(--color-primarytext);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.paneldb .panel .image{
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+}
+/*end db.panel here*/
