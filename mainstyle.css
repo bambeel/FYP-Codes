@@ -239,7 +239,6 @@ ul li:hover a{
     line-height: 0.8;
 }
 
-
 .voltage-viewer {
     position: absolute;
     width: 565px;
@@ -474,8 +473,87 @@ ul li:hover a{
 }
 
 .paneldb .panel .image{
+    position: relative;
     align-items: center;
-    display: inline-block;
-    justify-content: center;
+    width: 550px;
+    height: 550px;
+    top: 40px;
+    left: 265px;
+}
+
+.paneldb .panel .voltage{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--color-secondarytext);
+    width: 120px;
+    height: 50px;
+    top: 40px;
+    left: 0px;
+    position: relative;
+}
+
+.paneldb .panel .volts{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primarytext);
+    width: 120px;
+    height: 50px;
+    position: relative;
+}
+
+.paneldb .panel .surftemp{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--color-secondarytext);
+    width: 120px;
+    height: 50px;
+    position: relative;
+}
+
+.paneldb .panel .temp{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primarytext);
+    width: 120px;
+    height: 50px;
+    position: relative;
+}
+
+.paneldb .panel .manufacturer{
+    width: 250px;
+    text-align: center;
+}
+
+.paneldb .panel .size{
+    width: 250px;
+    text-align: center;
+}
+
+.paneldb .panel .lifecycle{
+    width: 250px;
+    text-align: center;
+}
+
+.paneldb .panel .material{
+    width: 250px;
+    text-align: center;
+}
+
+.paneldb .panel .titlecontainer{
+    display: flex;
+    padding-top: 200px;
+    align-content: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-secondarytext);
+}
+
+.paneldb .panel .infocontainer{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--color-primarytext);
 }
 /*end db.panel here*/
